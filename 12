@@ -1,0 +1,16 @@
+package statictest;
+
+public class StaticDemo4 {
+    static {
+        c = 10;
+//        System.out.println(c);
+    }
+
+    public StaticDemo4() {
+        System.out.println(c);
+    }
+    public static void main(String[] args) {
+        new StaticDemo4();
+    }
+    private static int c;
+}
