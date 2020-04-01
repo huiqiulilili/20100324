@@ -1,0 +1,14 @@
+package statictest;
+
+public class StaticDemo5 {
+    static int value = 33;
+
+    public static void main(String[] args) {
+        new StaticDemo5().printValue();
+    }
+
+    private void printValue() {
+         int  value = 3;
+        System.out.println(this.value);
+    }
+}
