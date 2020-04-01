@@ -1,0 +1,23 @@
+package statictest;
+
+public class StaticDemo11 {
+    public class InnerClass {
+        InnerClass() {
+            System.out.println("===========内部类=============");
+        }
+        public void innnerMethod() {
+            System.out.println("===========内部类的方法=======");
+        }
+    }
+
+    public static void main(String[] args) {
+        InnerClass innerClass = new StaticDemo11().new InnerClass();
+        innerClass.innnerMethod();
+    }
+}
+
+/*
+    输出：
+        ===========内部类=============
+        ===========内部类的方法=======
+ */
