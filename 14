@@ -1,0 +1,21 @@
+package statictest;
+
+public class StaticDemo2 {
+    public static void staticMethod2() {
+        System.out.println("========静态方法========");
+    }
+
+    public static void main(String[] args) {
+        //调用有两种方式
+        // 1、通过类名调用
+//        StaticDemo2.staticMethod();
+        // 2、创建对象调用
+        StaticDemo2 demo2 = new StaticDemo2();
+        demo2.staticMethod2();
+
+    }
+}
+/*
+    输出：
+        ========静态方法========
+ */
