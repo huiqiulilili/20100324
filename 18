@@ -1,0 +1,16 @@
+package stringtest;
+
+public class IntTest {
+    public static void main(String[] args) {
+        Integer i1 = 10;
+        Integer i11 = 10;
+        Integer i2 = 128;
+        Integer i21 = 128;
+        Integer i3 = new Integer(10);
+        Integer i4 = new Integer(128);
+        System.out.println(i1 == i11); // true
+        System.out.println(i2 == i21); // false
+        System.out.println(i1 == i3); // false
+        System.out.println(i2==i4); // false
+    }
+}
