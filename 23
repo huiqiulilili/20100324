@@ -1,0 +1,26 @@
+/*
+package threadtest;
+
+public class ThreadSleep {
+    public static void main(String[] args) {
+        MyThread mt = new MyThread();
+        new Thread(mt).start();
+        new Thread(mt).start();
+        new Thread(mt).start();
+    }
+}
+class MyThread implements Runnable {
+    @Override
+    public void run() {
+        for (int i = 0; i < 1000 ; i++) {
+            try {
+                Thread.sleep(1000);
+            } catch (InterruptedException e) {
+// TODO Auto-generated catch block
+                e.printStackTrace();
+            }
+            System.out.println("当前线程： " +Thread.currentThread().getName()+" ,i = " +i);
+        }
+    }
+}
+*/
