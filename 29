@@ -1,0 +1,22 @@
+package threadtest;
+
+public class ThreadinterruptTest {
+    public static void main(String[] args) {
+//        Thread thread = new ThreadinterruptTestThread();
+//        thread.start();
+//        thread.interrupt();
+        Thread.currentThread().interrupt();
+//        System.out.println("是否停止？1" + thread.isInterrupted());
+        System.out.println("是否停止？2" + Thread.interrupted());
+        System.out.println("是否停止？3" + Thread.interrupted());
+
+    }
+}
+class ThreadinterruptTestThread extends Thread {
+    @Override
+    public void run() {
+        for (int i = 0; i < 1000 ; i++) {
+            System.out.println("i+ " + i);
+        }
+    }
+}
