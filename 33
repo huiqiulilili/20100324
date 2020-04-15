@@ -1,0 +1,13 @@
+package threadtest;
+
+
+public class Do {
+    public static void main(String[] args) throws InterruptedException {
+        MyThread myThread = new MyThread();
+        myThread.start();
+        myThread.interrupt();
+        //sleep等待一秒，等myThread运行完
+        Thread.currentThread().sleep(1000);
+        System.out.println("myThread线程是否存活：" + myThread.isAlive());
+    }
+}
