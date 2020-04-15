@@ -1,0 +1,20 @@
+package threadtest;
+
+
+public class MyThread extends Thread {
+    @Override
+    public void run() {
+        for (int i = 0; i < 1000; i++) {
+            System.out.println("i=" + (i + 1));
+            if (this.isInterrupted()) {
+                System.out.println("通过this.isInterrupted()检测到中断");
+                System.out.println("第一个interrupted()" + this.interrupted());
+                System.out.println("第二个interrupted()" + this.interrupted());
+                break;
+            }
+        }
+        System.out.println("因为检测到中断，所以跳出循环，线程到这里结束，因为后面没有内容了");
+    }
+}
+
+
