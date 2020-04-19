@@ -1,0 +1,22 @@
+# 猜数字
+
+# str --- String     int --- 整数
+
+import random
+m = random.randint(1,100)
+# 只允许猜5次，没猜对就停止
+count = 5;
+while True:
+    if count > 0:
+        n = int(input("输入一个数字（1--100）："))
+        if n < m:
+            print("猜小了")
+        elif n > m:
+            print("猜大了")
+        else:
+            print("恭喜你，猜对了")
+            break
+        count -= 1
+    else:
+        print("你👎")
+        break
