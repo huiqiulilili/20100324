@@ -1,0 +1,32 @@
+# # while + for循环
+# n = 1
+# while n <= 9:
+#     for m in range(1,n+1):
+#         print(f'{m}*{n}={n*m}',end=" ")
+#     n += 1
+#     print()
+
+
+# break
+# while True:
+#     s = input('输入0退出：')
+#     if s == '0':
+#         break
+#     print('你输入的是：', s)
+
+
+
+
+# contiune
+# for s in 'python':
+#     if s == 'y':
+#         continue
+#     print(s)
+
+for n in [1, 2, 3, 4, 5, 6]:
+    if n == 3:
+        continue
+    print(n)
+
+
+
